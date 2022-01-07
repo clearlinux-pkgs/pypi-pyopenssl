@@ -22,7 +22,7 @@ BuildRequires : cffi-python
 BuildRequires : cryptography
 BuildRequires : idna-python
 BuildRequires : openssl-dev
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pyasn1
 BuildRequires : pycparser
@@ -32,7 +32,7 @@ BuildRequires : pypi(six)
 BuildRequires : pytest
 BuildRequires : six
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 pyOpenSSL -- A Python wrapper around the OpenSSL library
