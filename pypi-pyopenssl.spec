@@ -4,7 +4,7 @@
 #
 Name     : pypi-pyopenssl
 Version  : 21.0.0
-Release  : 102
+Release  : 103
 URL      : https://files.pythonhosted.org/packages/54/9a/2a43c5dbf4507f86f7c43cba4195d5e25a81c988fd7b0ea779dfc9c6973f/pyOpenSSL-21.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/54/9a/2a43c5dbf4507f86f7c43cba4195d5e25a81c988fd7b0ea779dfc9c6973f/pyOpenSSL-21.0.0.tar.gz
 Summary  : Python wrapper module around the OpenSSL library
@@ -14,25 +14,14 @@ Requires: pypi-pyopenssl-license = %{version}-%{release}
 Requires: pypi-pyopenssl-python = %{version}-%{release}
 Requires: pypi-pyopenssl-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: pyOpenSSL
-Provides: pyOpenSSL-python
-Provides: pyOpenSSL-python3
-BuildRequires : cffi
-BuildRequires : cffi-python
-BuildRequires : cryptography
-BuildRequires : idna-python
 BuildRequires : openssl-dev
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
-BuildRequires : pyasn1
-BuildRequires : pycparser
-BuildRequires : pycparser-python
 BuildRequires : pypi(cryptography)
+BuildRequires : pypi(py)
 BuildRequires : pypi(six)
-BuildRequires : pytest
-BuildRequires : six
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 pyOpenSSL -- A Python wrapper around the OpenSSL library
@@ -76,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641477057
+export SOURCE_DATE_EPOCH=1641680403
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
