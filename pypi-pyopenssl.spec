@@ -4,7 +4,7 @@
 #
 Name     : pypi-pyopenssl
 Version  : 23.0.0
-Release  : 114
+Release  : 115
 URL      : https://files.pythonhosted.org/packages/af/6e/0706d5e0eac08fcff586366f5198c9bf0a8b46f0f45b1858324e0d94c295/pyOpenSSL-23.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/af/6e/0706d5e0eac08fcff586366f5198c9bf0a8b46f0f45b1858324e0d94c295/pyOpenSSL-23.0.0.tar.gz
 Summary  : Python wrapper module around the OpenSSL library
