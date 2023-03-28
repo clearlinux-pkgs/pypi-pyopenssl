@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-pyopenssl
-Version  : 23.1.0
-Release  : 116
-URL      : https://files.pythonhosted.org/packages/d8/d0/35a1997b0b2180403f64a168e9043523999afdb1fc676a0a4e78581bde5b/pyOpenSSL-23.1.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/d8/d0/35a1997b0b2180403f64a168e9043523999afdb1fc676a0a4e78581bde5b/pyOpenSSL-23.1.0.tar.gz
+Version  : 23.1.1
+Release  : 117
+URL      : https://files.pythonhosted.org/packages/8f/72/f1d9e92f5d3a58aba3b71ad512de19eb9f82e7b98795662bf7b796be71e5/pyOpenSSL-23.1.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/8f/72/f1d9e92f5d3a58aba3b71ad512de19eb9f82e7b98795662bf7b796be71e5/pyOpenSSL-23.1.1.tar.gz
 Summary  : Python wrapper module around the OpenSSL library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -16,7 +16,6 @@ Requires: pypi-pyopenssl-python = %{version}-%{release}
 Requires: pypi-pyopenssl-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : openssl-dev
-BuildRequires : pypi(cryptography)
 BuildRequires : pypi(py)
 BuildRequires : pypi-pluggy
 BuildRequires : pypi-pytest
@@ -59,10 +58,10 @@ python3 components for the pypi-pyopenssl package.
 
 
 %prep
-%setup -q -n pyOpenSSL-23.1.0
-cd %{_builddir}/pyOpenSSL-23.1.0
+%setup -q -n pyOpenSSL-23.1.1
+cd %{_builddir}/pyOpenSSL-23.1.1
 pushd ..
-cp -a pyOpenSSL-23.1.0 buildavx2
+cp -a pyOpenSSL-23.1.1 buildavx2
 popd
 
 %build
@@ -70,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1679672832
+export SOURCE_DATE_EPOCH=1680014601
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
