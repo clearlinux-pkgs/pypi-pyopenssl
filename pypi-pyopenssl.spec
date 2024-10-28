@@ -7,7 +7,7 @@
 #
 Name     : pypi-pyopenssl
 Version  : 24.2.1
-Release  : 125
+Release  : 126
 URL      : https://files.pythonhosted.org/packages/5d/70/ff56a63248562e77c0c8ee4aefc3224258f1856977e0c1472672b62dadb8/pyopenssl-24.2.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5d/70/ff56a63248562e77c0c8ee4aefc3224258f1856977e0c1472672b62dadb8/pyopenssl-24.2.1.tar.gz
 Summary  : Python wrapper module around the OpenSSL library
